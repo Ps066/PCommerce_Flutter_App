@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:t_store/utils/constants/colors.dart';
+import 'package:flutter_ecommerce/utils/constants/colors.dart';
 import '../../constants/sizes.dart';
 
 class TTextFormFieldTheme {
@@ -11,7 +11,7 @@ class TTextFormFieldTheme {
     suffixIconColor: PColors.darkGrey,
     // constraints: const BoxConstraints.expand(height: PSizes.inputFieldHeight),
     labelStyle: const TextStyle().copyWith(fontSize: PSizes.fontSizeMd, color: PColors.black),
-    hintStyle: const TextStyle().copyWith(fontSize: PSizes.fonPSizesm, color: PColors.black),
+    hintStyle: const TextStyle().copyWith(fontSize: PSizes.fontSizeSm, color: PColors.black),
     errorStyle: const TextStyle().copyWith(fontStyle: FontStyle.normal),
     floatingLabelStyle: const TextStyle().copyWith(color: PColors.black.withOpacity(0.8)),
     border: const OutlineInputBorder().copyWith(
@@ -42,7 +42,7 @@ class TTextFormFieldTheme {
     suffixIconColor: PColors.darkGrey,
     // constraints: const BoxConstraints.expand(height: PSizes.inputFieldHeight),
     labelStyle: const TextStyle().copyWith(fontSize: PSizes.fontSizeMd, color: PColors.white),
-    hintStyle: const TextStyle().copyWith(fontSize: PSizes.fonPSizesm, color: PColors.white),
+    hintStyle: const TextStyle().copyWith(fontSize: PSizes.fontSizeSm, color: PColors.white),
     floatingLabelStyle: const TextStyle().copyWith(color: PColors.white.withOpacity(0.8)),
     border: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(PSizes.inputFieldRadius),
