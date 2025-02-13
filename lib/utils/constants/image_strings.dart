@@ -5,8 +5,8 @@
 class PImages {
 
   // -- App Logos
-  static const String darkAppLogo = "assets/logos/t-store-splash-logo-black.png";
-  static const String lightAppLogo = "assets/logos/t-store-splash-logo-white.png";
+  static const String darkAppLogo = "assets/logos/logo_dark.jpg";
+  static const String lightAppLogo = "assets/logos/logo_light.jpg";
 
   // -- Social Logos
   static const String google = "assets/logos/google-icon.png";
