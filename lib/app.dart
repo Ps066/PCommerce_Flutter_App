@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ecommerce/features/authentication/screens/onboarding/onboarding.dart';
+import 'package:flutter_ecommerce/navigation_menu.dart';
 import 'package:get/get.dart';
 import 'package:flutter_ecommerce/utils/theme/theme.dart';
 
@@ -13,7 +13,7 @@ class App extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: PAppTheme.lightTheme,
       darkTheme: PAppTheme.darkTheme,
-      home: const OnBoardingScreen(),
+      home: const NavigationMenu(),
     );
   }
 }

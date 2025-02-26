@@ -9,13 +9,13 @@ class FormDivider extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = PHelperFunctions.isDarkMode(context);
+    final dark = AppHelperFunctions.isDarkMode(context);
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Flexible(
             child: Divider(
-          color: dark ? PColors.darkGrey : PColors.grey,
+          color: dark ? MyAppColors.darkGrey : MyAppColors.grey,
           thickness: 0.5,
           indent: 60,
           endIndent: 5,
@@ -26,7 +26,7 @@ class FormDivider extends StatelessWidget {
         ),
         Flexible(
             child: Divider(
-          color: dark ? PColors.darkGrey : PColors.grey,
+          color: dark ? MyAppColors.darkGrey : MyAppColors.grey,
           thickness: 0.5,
           indent: 5,
           endIndent: 60,

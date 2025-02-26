@@ -15,19 +15,19 @@ class OnboardingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(PSizes.defaultSpace),
+      padding: const EdgeInsets.all(MyAppSizes.defaultSpace),
       child: Column(
         children: [
           Image(
-              width: PHelperFunctions.screenWidth() * 0.8,
-              height: PHelperFunctions.screenHeight() * 0.6,
+              width: AppHelperFunctions.screenWidth() * 0.8,
+              height: AppHelperFunctions.screenHeight() * 0.6,
               image: AssetImage(image)),
           Text(
             title,
             style: Theme.of(context).textTheme.headlineMedium,
             textAlign: TextAlign.center,
           ),
-          const SizedBox(height: PSizes.spaceBtwItems),
+          const SizedBox(height: MyAppSizes.spaceBtwItems),
           Text(
             subTitle,
             style: Theme.of(context).textTheme.bodyMedium,

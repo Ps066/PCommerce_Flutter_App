@@ -28,19 +28,19 @@ class SignUpForm extends StatelessWidget {
                 child: TextFormField(
                   expands: false,
                   decoration: const InputDecoration(
-                      labelText: PTexts.firstName,
+                      labelText: MyAppTexts.firstName,
                       prefixIcon: Icon(Iconsax.user)),
                 ),
               ),
               // space between both the horizontal text field
               const SizedBox(
-                width: PSizes.spaceBtwInputFields,
+                width: MyAppSizes.spaceBtwInputFields,
               ),
               Expanded(
                 child: TextFormField(
                   expands: false,
                   decoration: const InputDecoration(
-                      labelText: PTexts.lastName,
+                      labelText: MyAppTexts.lastName,
                       prefixIcon: Icon(Iconsax.user)),
                 ),
               )
@@ -48,65 +48,65 @@ class SignUpForm extends StatelessWidget {
           ),
           // username
           const SizedBox(
-            height: PSizes.spaceBtwInputFields,
+            height: MyAppSizes.spaceBtwInputFields,
           ), //vertical spacing
           TextFormField(
               decoration: const InputDecoration(
-                  labelText: PTexts.username,
+                  labelText: MyAppTexts.username,
                   prefixIcon: Icon(Iconsax.user_edit))),
     
           // email
           const SizedBox(
-            height: PSizes.spaceBtwInputFields,
+            height: MyAppSizes.spaceBtwInputFields,
           ), //vertical spacing
           TextFormField(
               decoration: const InputDecoration(
-                  labelText: PTexts.email,
+                  labelText: MyAppTexts.email,
                   prefixIcon: Icon(Iconsax.direct))),
     
           // phonenumber
           const SizedBox(
-            height: PSizes.spaceBtwInputFields,
+            height: MyAppSizes.spaceBtwInputFields,
           ), //vertical spacing
           TextFormField(
               decoration: const InputDecoration(
-                  labelText: PTexts.phoneNo,
+                  labelText: MyAppTexts.phoneNo,
                   prefixIcon: Icon(Iconsax.call))),
     
           // password
           const SizedBox(
-            height: PSizes.spaceBtwInputFields,
+            height: MyAppSizes.spaceBtwInputFields,
           ), //vertical spacing
           TextFormField(
               obscureText: true,
               decoration: const InputDecoration(
-                  labelText: PTexts.password,
+                  labelText: MyAppTexts.password,
                   prefixIcon: Icon(Iconsax.password_check),
                   suffix: Icon(Iconsax.eye_slash))),
     
           // terms and conditions check box
           const SizedBox(
-            height: PSizes.spaceBtwInputFields,
+            height: MyAppSizes.spaceBtwInputFields,
           ),
           TermsAndConditionsCheckBox(dark: dark),
     
           const SizedBox(
-            height: PSizes.spaceBtwSections,
+            height: MyAppSizes.spaceBtwSections,
           ),
           // signup button 
           SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){
             Get.to(()=> const VerifyEmailPage());
-          }, child: const Text(PTexts.createAccount),),),
+          }, child: const Text(MyAppTexts.createAccount),),),
     
           // divider 
           const SizedBox(
-            height: PSizes.spaceBtwSections,
+            height: MyAppSizes.spaceBtwSections,
           ),
-          FormDivider(dividerText: PTexts.orSignUpWith.capitalize!),
+          FormDivider(dividerText: MyAppTexts.orSignUpWith.capitalize!),
     
         // social buttons 
         const SizedBox(
-            height: PSizes.spaceBtwSections,
+            height: MyAppSizes.spaceBtwSections,
           ),
         const SocialButtons(),
     

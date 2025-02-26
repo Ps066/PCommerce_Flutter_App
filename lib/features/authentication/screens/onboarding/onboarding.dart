@@ -23,19 +23,19 @@ class OnBoardingScreen extends StatelessWidget {
             onPageChanged: controller.updatepageIndicator,  // it will fetch index automatically
             children: const [
               OnboardingPage(
-                image: PImages.onBoardingImage1,
-                title: PTexts.onBoardingTitle1,
-                subTitle: PTexts.onBoardingSubTitle1,
+                image: MyAppImageString.onBoardingImage1,
+                title: MyAppTexts.onBoardingTitle1,
+                subTitle: MyAppTexts.onBoardingSubTitle1,
               ),
               OnboardingPage(
-                image: PImages.onBoardingImage2,
-                title: PTexts.onBoardingTitle2,
-                subTitle: PTexts.onBoardingSubTitle2,
+                image: MyAppImageString.onBoardingImage2,
+                title: MyAppTexts.onBoardingTitle2,
+                subTitle: MyAppTexts.onBoardingSubTitle2,
               ),
               OnboardingPage(
-                image: PImages.onBoardingImage3,
-                title: PTexts.onBoardingTitle3,
-                subTitle: PTexts.onBoardingSubTitle3,
+                image: MyAppImageString.onBoardingImage3,
+                title: MyAppTexts.onBoardingTitle3,
+                subTitle: MyAppTexts.onBoardingSubTitle3,
               ),
             ],
           ),

@@ -15,10 +15,10 @@ class PAppTheme {
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,    
     fontFamily: 'Poppins',
-    disabledColor: PColors.grey,
+    disabledColor: MyAppColors.grey,
     brightness: Brightness.light,   // this sets the theme as light mode 
-    primaryColor: PColors.primary,    
-    scaffoldBackgroundColor: PColors.white,
+    primaryColor: MyAppColors.primary,    
+    scaffoldBackgroundColor: MyAppColors.white,
     textTheme: PTextTheme.lightTextTheme,    // custome light text theme
     elevatedButtonTheme: PElevatedButtonTheme.lightElevatedButtonTheme,
     inputDecorationTheme: TTextFormFieldTheme.lightInputDecorationTheme,
@@ -31,10 +31,10 @@ class PAppTheme {
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,    
     fontFamily: 'Poppins',
-    disabledColor: PColors.grey,
+    disabledColor: MyAppColors.grey,
     brightness: Brightness.dark,   // this sets the theme as dark mode 
-    primaryColor: PColors.primary,    
-    scaffoldBackgroundColor: PColors.black,
+    primaryColor: MyAppColors.primary,    
+    scaffoldBackgroundColor: MyAppColors.black,
     textTheme: PTextTheme.darkTextTheme,    // custome light text theme
     elevatedButtonTheme: PElevatedButtonTheme.darkElevatedButtonTheme,
     inputDecorationTheme: TTextFormFieldTheme.darkInputDecorationTheme,

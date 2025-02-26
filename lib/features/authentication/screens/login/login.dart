@@ -14,7 +14,7 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = PHelperFunctions.isDarkMode(context);
+    final dark = AppHelperFunctions.isDarkMode(context);
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
@@ -28,8 +28,8 @@ class LoginScreen extends StatelessWidget {
               const LoginForm(),
 
               // divider
-              FormDivider(dividerText: PTexts.orSignInWith.capitalize!),
-              const SizedBox(height: PSizes.spaceBtwSections,),
+              FormDivider(dividerText: MyAppTexts.orSignInWith.capitalize!),
+              const SizedBox(height: MyAppSizes.spaceBtwSections,),
 
               // footer
               const SocialButtons(),

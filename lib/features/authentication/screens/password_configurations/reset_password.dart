@@ -20,37 +20,37 @@ class RestPasswordPage extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(PSizes.defaultSpace),
+          padding: const EdgeInsets.all(MyAppSizes.defaultSpace),
           child: Column(
             children: [
               // image 
-            Image(image: const AssetImage(PImages.deliveredEmailIllustration), width: PHelperFunctions.screenWidth() * 0.6,),
-            const SizedBox(height: PSizes.spaceBtwSections,),
+            Image(image: const AssetImage(MyAppImageString.deliveredEmailIllustration), width: AppHelperFunctions.screenWidth() * 0.6,),
+            const SizedBox(height: MyAppSizes.spaceBtwSections,),
 
             // title sub title
             Text(
-              PTexts.changeYourPasswordTitle,
+              MyAppTexts.changeYourPasswordTitle,
               style: Theme.of(context).textTheme.headlineLarge,
               textAlign: TextAlign.center,
             ),
-            const SizedBox(height: PSizes.spaceBtwItems,),
+            const SizedBox(height: MyAppSizes.spaceBtwItems,),
             Text(
-              PTexts.changeYourPasswordTitle,
+              MyAppTexts.changeYourPasswordTitle,
               style: Theme.of(context).textTheme.labelMedium,
               textAlign: TextAlign.center,
             ),
 
             // button 
 
-            const SizedBox(height: PSizes.spaceBtwSections,),
+            const SizedBox(height: MyAppSizes.spaceBtwSections,),
             SizedBox(
               width: double.infinity,
-              child: ElevatedButton(onPressed: (){},child: const Text(PTexts.done)),
+              child: ElevatedButton(onPressed: (){},child: const Text(MyAppTexts.done)),
             ),
-            const SizedBox(height: PSizes.spaceBtwItems,),
+            const SizedBox(height: MyAppSizes.spaceBtwItems,),
             SizedBox(
               width: double.infinity,
-              child: TextButton(onPressed: (){},child: const Text(PTexts.resendEmail)),
+              child: TextButton(onPressed: (){},child: const Text(MyAppTexts.resendEmail)),
             ),
 
           

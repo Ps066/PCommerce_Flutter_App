@@ -17,24 +17,24 @@ class LoginForm extends StatelessWidget {
     return Form(
       child: Padding(
         padding: const EdgeInsets.symmetric(
-            vertical: PSizes.spaceBtwSections),
+            vertical: MyAppSizes.spaceBtwSections),
         child: Column(
           children: [
             // email
             TextFormField(
               decoration: const InputDecoration(
                   prefixIcon: Icon(Iconsax.direct_right),
-                  labelText: PTexts.email),
+                  labelText: MyAppTexts.email),
             ),
-            const SizedBox(height: PSizes.spaceBtwInputFields),
+            const SizedBox(height: MyAppSizes.spaceBtwInputFields),
             // password
             TextFormField(
               decoration: const InputDecoration(
                   prefixIcon: Icon(Iconsax.password_check),
-                  labelText: PTexts.password,
+                  labelText: MyAppTexts.password,
                   suffixIcon: Icon(Iconsax.eye_slash)),
             ),
-            const SizedBox(height: PSizes.spaceBtwInputFields / 2),
+            const SizedBox(height: MyAppSizes.spaceBtwInputFields / 2),
             // rembember me & forgot password
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -43,7 +43,7 @@ class LoginForm extends StatelessWidget {
                 Row(
                   children: [
                     Checkbox(value: true, onChanged: (value) {}),
-                    const Text(PTexts.rememberMe),
+                    const Text(MyAppTexts.rememberMe),
                   ],
                 ),
     
@@ -52,12 +52,12 @@ class LoginForm extends StatelessWidget {
                     onPressed: () {
                       Get.to(()=> const ForgotPasswordScreen());
                     },
-                    child: const Text(PTexts.forgetPassword)),
+                    child: const Text(MyAppTexts.forgetPassword)),
               ],
             ),
     
             const SizedBox(
-              height: PSizes.spaceBtwSections,
+              height: MyAppSizes.spaceBtwSections,
             ),
     
             // sign in button
@@ -67,12 +67,12 @@ class LoginForm extends StatelessWidget {
                 onPressed: () {
                   Get.to(()=>const NavigationMenu());
                 },
-                child: const Text(PTexts.signIn),
+                child: const Text(MyAppTexts.signIn),
               ),
             ),
     
             const SizedBox(
-              height: PSizes.spaceBtwItems,
+              height: MyAppSizes.spaceBtwItems,
             ),
             // create account button
             SizedBox(
@@ -81,7 +81,7 @@ class LoginForm extends StatelessWidget {
                 onPressed: () {
                   Get.to(()=> const SignUpPage());
                 },
-                child: const Text(PTexts.createAccount),
+                child: const Text(MyAppTexts.createAccount),
               ),
             ),
           ],

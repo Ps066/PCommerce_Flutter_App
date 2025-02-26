@@ -21,50 +21,50 @@ class VerifyEmailPage extends StatelessWidget {
         ],
       ),
       body: Padding(
-        padding: const EdgeInsets.all(PSizes.defaultSpace),
+        padding: const EdgeInsets.all(MyAppSizes.defaultSpace),
         child: Column(
           children: [
             // Image 
-            Image(image: const AssetImage(PImages.deliveredEmailIllustration), width: PHelperFunctions.screenWidth() * 0.6,),
-            const SizedBox(height: PSizes.spaceBtwSections,),
+            Image(image: const AssetImage(MyAppImageString.deliveredEmailIllustration), width: AppHelperFunctions.screenWidth() * 0.6,),
+            const SizedBox(height: MyAppSizes.spaceBtwSections,),
 
             // Title & SubTitle
             Text(
-              PTexts.confirmEmail,
+              MyAppTexts.confirmEmail,
               style: Theme.of(context).textTheme.headlineLarge,
               textAlign: TextAlign.center,
             ),
-            const SizedBox(height: PSizes.spaceBtwItems,),
+            const SizedBox(height: MyAppSizes.spaceBtwItems,),
             Text(
               'support@google.com',
               style: Theme.of(context).textTheme.labelLarge,
               textAlign: TextAlign.center,
             ),
-            const SizedBox(height: PSizes.spaceBtwItems,),
+            const SizedBox(height: MyAppSizes.spaceBtwItems,),
             Text(
-              PTexts.confirmEmailSubTitle,
+              MyAppTexts.confirmEmailSubTitle,
               style: Theme.of(context).textTheme.labelMedium,
               textAlign: TextAlign.center,
             ),
 
 
             // Buttons
-            const SizedBox(height: PSizes.spaceBtwSections,),
+            const SizedBox(height: MyAppSizes.spaceBtwSections,),
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(onPressed: (){
                 Get.to(()=>  SuccessScreen(
-                  image: PImages.staticSuccessIllustration,
-                  title: PTexts.yourAccountCreatedTitle,
-                  subtitle: PTexts.yourAccountCreatedSubTitle,
+                  image: MyAppImageString.staticSuccessIllustration,
+                  title: MyAppTexts.yourAccountCreatedTitle,
+                  subtitle: MyAppTexts.yourAccountCreatedSubTitle,
                   onpressed: ()=> Get.to(()=> const LoginScreen()),
                 ));
-              },child: const Text(PTexts.tContinue)),
+              },child: const Text(MyAppTexts.tContinue)),
             ),
-            const SizedBox(height: PSizes.spaceBtwItems,),
+            const SizedBox(height: MyAppSizes.spaceBtwItems,),
             SizedBox(
               width: double.infinity,
-              child: TextButton(onPressed: (){},child: const Text(PTexts.resendEmail)),
+              child: TextButton(onPressed: (){},child: const Text(MyAppTexts.resendEmail)),
             ),
 
           ],

@@ -13,18 +13,18 @@ class OnboardingElevatedButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = PHelperFunctions.isDarkMode(context);
+    final dark = AppHelperFunctions.isDarkMode(context);
     return Positioned(
-      right: PSizes.defaultSpace,
-      bottom: PDeviceUtils.getBottomNavigationBarHeight(),
+      right: MyAppSizes.defaultSpace,
+      bottom: AppDeviceUtils.getBottomNavigationBarHeight(),
       child: ElevatedButton(
         onPressed: () {
           OnBoardingController.instance.nextPage();
         },
         style: ElevatedButton.styleFrom(
             shape: const CircleBorder(),
-            backgroundColor: dark ? PColors.primary : Colors.black,
-            side: BorderSide(color: dark ? PColors.primary : Colors.black)),
+            backgroundColor: dark ? MyAppColors.primary : Colors.black,
+            side: BorderSide(color: dark ? MyAppColors.primary : Colors.black)),
         child: const Icon(Iconsax.arrow_right_3),
       ),
     );

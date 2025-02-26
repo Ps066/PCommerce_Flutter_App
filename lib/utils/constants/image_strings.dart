@@ -2,7 +2,7 @@
 /* -- App Image Strings -- */
 
 /// This class contains all the App Images in String formats.
-class PImages {
+class MyAppImageString {
 
   // -- App Logos
   static const String darkAppLogo = "assets/logos/logo_dark.jpg";

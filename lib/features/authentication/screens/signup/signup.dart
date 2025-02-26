@@ -9,24 +9,24 @@ class SignUpPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = PHelperFunctions.isDarkMode(context);
+    final dark = AppHelperFunctions.isDarkMode(context);
     return Scaffold(
       appBar: AppBar(),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(PSizes.defaultSpace),
+          padding: const EdgeInsets.all(MyAppSizes.defaultSpace),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               // title
               Text(
-                PTexts.signupTitle,
+                MyAppTexts.signupTitle,
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
 
               // sapcing in between
               const SizedBox(
-                height: PSizes.spaceBtwSections,
+                height: MyAppSizes.spaceBtwSections,
               ),
 
               // form

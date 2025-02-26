@@ -13,36 +13,36 @@ class ForgotPasswordScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: Padding(
-        padding: const EdgeInsets.all(PSizes.defaultSpace),
+        padding: const EdgeInsets.all(MyAppSizes.defaultSpace),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // HEADING
             Text(
-              PTexts.forgetPasswordTitle,
+              MyAppTexts.forgetPasswordTitle,
               style: Theme.of(context).textTheme.headlineMedium,
             ),
             // space
             const SizedBox(
-              height: PSizes.spaceBtwItems,
+              height: MyAppSizes.spaceBtwItems,
             ),
             Text(
-              PTexts.forgetPasswordSubTitle,
+              MyAppTexts.forgetPasswordSubTitle,
               style: Theme.of(context).textTheme.labelMedium,
             ),
             const SizedBox(
-              height: PSizes.spaceBtwSections * 2,
+              height: MyAppSizes.spaceBtwSections * 2,
             ),
 
             // textfield
             TextFormField(
               decoration: const InputDecoration(
                   prefixIcon: Icon(Iconsax.direct_right),
-                  labelText: PTexts.email),
+                  labelText: MyAppTexts.email),
             ),
 
             const SizedBox(
-              height: PSizes.spaceBtwSections,
+              height: MyAppSizes.spaceBtwSections,
             ),
 
             // button
@@ -52,7 +52,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                 onPressed: () {
                   Get.to(()=> const RestPasswordPage());
                 },
-                child: const Text(PTexts.tContinue),
+                child: const Text(MyAppTexts.tContinue),
               ),
             )
           ],

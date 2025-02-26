@@ -18,8 +18,8 @@ class SuccessScreen extends StatelessWidget {
         child: Column(
           children: [
             // image 
-            Image(image: AssetImage(image), width: PHelperFunctions.screenWidth() * 0.6,),
-            const SizedBox(height: PSizes.spaceBtwSections,),
+            Image(image: AssetImage(image), width: AppHelperFunctions.screenWidth() * 0.6,),
+            const SizedBox(height: MyAppSizes.spaceBtwSections,),
 
             // title sub title
             Text(
@@ -27,7 +27,7 @@ class SuccessScreen extends StatelessWidget {
               style: Theme.of(context).textTheme.headlineLarge,
               textAlign: TextAlign.center,
             ),
-            const SizedBox(height: PSizes.spaceBtwItems,),
+            const SizedBox(height: MyAppSizes.spaceBtwItems,),
             Text(
               subtitle,
               style: Theme.of(context).textTheme.labelMedium,
@@ -36,10 +36,10 @@ class SuccessScreen extends StatelessWidget {
 
             // button 
 
-            const SizedBox(height: PSizes.spaceBtwSections,),
+            const SizedBox(height: MyAppSizes.spaceBtwSections,),
             SizedBox(
               width: double.infinity,
-              child: ElevatedButton(onPressed: onpressed,child: const Text(PTexts.tContinue)),
+              child: ElevatedButton(onPressed: onpressed,child: const Text(MyAppTexts.tContinue)),
             ),
           ],
         ),

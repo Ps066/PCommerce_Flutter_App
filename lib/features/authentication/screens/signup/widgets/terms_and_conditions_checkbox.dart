@@ -15,7 +15,7 @@ class TermsAndConditionsCheckBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return Wrap(
       crossAxisAlignment: WrapCrossAlignment.center,
-      spacing: PSizes.spaceBtwItems,
+      spacing: MyAppSizes.spaceBtwItems,
       runSpacing:
           12, // Adjust this for better spacing in smaller screens
       children: [
@@ -28,38 +28,38 @@ class TermsAndConditionsCheckBox extends StatelessWidget {
           ),
         ),
         const SizedBox(
-          width: PSizes.spaceBtwItems,
+          width: MyAppSizes.spaceBtwItems,
         ),
         Text.rich(TextSpan(children: [
           TextSpan(
-              text: '${PTexts.iAgreeTo} ',
+              text: '${MyAppTexts.iAgreeTo} ',
               style: Theme.of(context).textTheme.bodySmall),
           TextSpan(
-              text: PTexts.privacyPolicy,
+              text: MyAppTexts.privacyPolicy,
               style: Theme.of(context)
                   .textTheme
                   .bodySmall!
                   .apply(
                     color:
-                        dark ? PColors.white : PColors.primary,
+                        dark ? MyAppColors.white : MyAppColors.primary,
                     decoration: TextDecoration.underline,
                     decorationColor:
-                        dark ? PColors.white : PColors.primary,
+                        dark ? MyAppColors.white : MyAppColors.primary,
                   )),
           TextSpan(
-              text: ' ${PTexts.and}',
+              text: ' ${MyAppTexts.and}',
               style: Theme.of(context).textTheme.bodySmall),
           TextSpan(
-              text: PTexts.termsOfUse,
+              text: MyAppTexts.termsOfUse,
               style: Theme.of(context)
                   .textTheme
                   .bodySmall!
                   .apply(
                     color:
-                        dark ? PColors.white : PColors.primary,
+                        dark ? MyAppColors.white : MyAppColors.primary,
                     decoration: TextDecoration.underline,
                     decorationColor:
-                        dark ? PColors.white : PColors.primary,
+                        dark ? MyAppColors.white : MyAppColors.primary,
                   )),
         ]))
       ],

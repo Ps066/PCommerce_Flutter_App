@@ -1,6 +1,6 @@
 
 /// This class contains all the App Text in String formats.
-class PTexts {
+class MyAppTexts {
 
   // -- GLOBAL Texts
   static const String and = "and";
@@ -63,7 +63,7 @@ class PTexts {
 
   // -- Home
   static const String homeAppbarTitle = "Good day for shopping";
-  static const String homeAppbarSubTitle = "Taimoor Sikander";
+  static const String homeAppbarSubTitle = "Prashant Shukla";
 
 
 }
