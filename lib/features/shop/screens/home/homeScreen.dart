@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ecommerce/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:flutter_ecommerce/common/widgets/custom_shapes/curved_edges/curved_edges_widget.dart';
+import 'package:flutter_ecommerce/common/widgets/image_text_widget/vertical_image_text.dart';
+import 'package:flutter_ecommerce/common/widgets/texts/section_heading.dart';
 import 'package:flutter_ecommerce/features/shop/screens/home/widget/home_appbar.dart';
-import 'package:flutter_ecommerce/utils/constants/colors.dart';
+import 'package:flutter_ecommerce/utils/constants/image_strings.dart';
 import 'package:flutter_ecommerce/utils/constants/sizes.dart';
-import 'package:flutter_ecommerce/utils/device/device_utility.dart';
-import 'package:iconsax/iconsax.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -26,9 +27,40 @@ class HomeScreen extends StatelessWidget {
                   ),
 
                   // searchbar
-                  SearchContainer()
+                  const SearchContainer(text: "Search in Store"),
+                  const SizedBox(
+                    height: MyAppSizes.spaceBtwSections,
+                  ),
 
                   //categories
+                  Padding(
+                    padding: EdgeInsets.only(left: MyAppSizes.defaultSpace),
+                    child: Column(
+                      children: [
+                        SectionHeading(
+                          title: "Popular Categories",
+                          showActionButton: false,
+                        ),
+                        const SizedBox(
+                          height: MyAppSizes.spaceBtwItems,
+                        ),
+
+                        // categories
+                        SizedBox(
+                          height: 80,
+                          child: ListView.builder(
+                            shrinkWrap: true,
+                            itemCount: 6,
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (_, index) {
+                              return VerticalImageText(title: 'Shoes', image: MyAppImageString.sportIcon, ontap: (){});
+                            },
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: MyAppSizes.spaceBtwSections,),
                 ],
               ),
             )
@@ -39,33 +71,4 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
-class SearchContainer extends StatelessWidget {
-  const SearchContainer({
-    super.key,
-  });
 
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(
-          horizontal: MyAppSizes.defaultSpace),
-      child: Container(
-        width: AppDeviceUtils.getScreenWidth(context),
-        padding: const EdgeInsets.all(MyAppSizes.md),
-        decoration: BoxDecoration(
-          color: MyAppColors.white,
-          borderRadius:
-              BorderRadius.circular(MyAppSizes.cardRadiusLg),
-          border: Border.all(color: MyAppColors.grey),
-        ),
-        child: Row(
-          children: [
-            const Icon(Iconsax.search_normal, color: MyAppColors.darkerGrey,),
-            const SizedBox(width: MyAppSizes.spaceBtwItems,),
-            Text('Search in Store', style: Theme.of(context).textTheme.bodySmall,)
-          ],
-        ),
-      ),
-    );
-  }
-}

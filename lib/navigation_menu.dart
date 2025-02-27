@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ecommerce/features/personalization/screens/settings/settings_screen.dart';
 import 'package:flutter_ecommerce/features/shop/screens/home/homeScreen.dart';
 import 'package:flutter_ecommerce/utils/constants/colors.dart';
 import 'package:flutter_ecommerce/utils/helpers/helper_functions.dart';
@@ -46,6 +47,6 @@ class NavigationController extends GetxController{
     HomeScreen(),
     Container(color: Colors.red,),
     Container(color: Colors.deepPurple,),
-    Container(color: Colors.orange,),
+    SettingsScreen(),
   ];
 }

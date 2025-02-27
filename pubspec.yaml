@@ -16,7 +16,6 @@ dependencies:
   logger: ^2.5.0
   url_launcher: ^6.3.1
   connectivity_plus: ^6.1.3
-  firebase_storage: ^12.2.0
   flutter_native_splash: ^2.4.0
   
 
@@ -28,6 +27,10 @@ dependencies:
   get: ^4.7.1
   get_storage: ^2.1.1
   smooth_page_indicator: ^1.2.0+3
+
+  # firebase
+  firebase_storage: ^12.2.0
+  firebase_core: ^3.4.0
 
 
   # product specific 
@@ -51,6 +54,7 @@ flutter:
     - assets/icons/
     - assets/images/on_boarding_images/
     - assets/images/animations/
+    - assets/icons/categories/
 
 #--------------- local fonts ---------------#
   fonts:

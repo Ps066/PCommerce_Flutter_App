@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/features/authentication/screens/login/login.dart';
 import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 
 class OnBoardingController extends GetxController{
   static OnBoardingController get instance=> Get.find();  //Creates a new instance every time the app runs (even if we don’t need it yet).
@@ -22,6 +23,11 @@ class OnBoardingController extends GetxController{
   //update current index and jump to next page
   void nextPage(){
     if(currentPageIndex.value == 2){  // check if we are on the last page
+      // setting the first time value as false 
+      final storage = GetStorage();
+      storage.write('isFirstTime', false);
+      
+      // change screen 
       Get.offAll(const LoginScreen());
     }else{
       int page = currentPageIndex.value +1;
